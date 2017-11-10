@@ -164,18 +164,38 @@
 
 /***************************ESTILO TARJETA**********************/
 
+/* seccion de la foto  */
 
+
+.carddemoBasicUsage .card-media {
+  width: 125px;
+  height: 120px;
+  background-color: #1e3d18; 
+  border-radius: 0px;
+  margin-right: 300px;
+  margin-top:-10px;
+  border-radius: 100px;
+  
+}
 
 .md-user-avatar {
 
-  width:30%;
-  background-color: #E5AA17;
-    margin-right: 200px;
+  width:auto;
+  height: 160px;
+    background-color: #E5AA17;
+  margin-left:-312px;
+  margin-bottom: px;
+  padding: 0px;
+  border-radius: 0px;
+  margin-top:-16px;
+  
 }
 
 
 .informacion{
+
   margin-top: -20px;
+
 }
 
 
@@ -184,6 +204,21 @@
     height: 25px;
     margin-left: 600px;
     text-align: center;
+}
+
+
+#borde-foto{
+
+  
+  vertical-align: center;
+  padding:0px;
+}
+
+#marco{
+  color: white;
+  background-color: #FCB415;
+  width: 100%;
+  padding: 2px;
 }
 
 #area{
@@ -197,7 +232,30 @@
 }
 
 #boton{
+  margin-top: -20px;
   color: rgba(255, 255, 255, 0.9);
   background-color: #448AFF;
-  width: 50%;
+  
 }
+
+
+
+
+
+.contenedor-tarjetas
+{
+  border-color: red;
+  background-color: gray;
+}
+
+.md-card{
+  margin: 0px;
+}
+
+.md-card-actions
+{
+  width: 100%;
+  
+}
+
+/*********************/
