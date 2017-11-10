@@ -1,0 +1,33 @@
+.tarjeta
+{
+    width: 60%;
+    height: 90%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.barra
+{
+    background-color: #00796B;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.icono
+{
+    color: #4CAF50;
+    font-size: 500px;
+}
+
+.contenido-tarjeta
+{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+}
+
+.div-padre
+{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
