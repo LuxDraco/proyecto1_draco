@@ -12,7 +12,7 @@
 
 .material-icons{ 
   font-size: 2500%;
-  color: #C72035; 
+  color: #4CAF50; 
 }
 
 .tarjeta
@@ -38,8 +38,9 @@
 
 .addL{
   position: absolute;
-  bottom: 15%;
+  bottom: -.001%;
   font-size: 250%;
   font-weight: bold;
   color: #BC8610;
+ 
 }

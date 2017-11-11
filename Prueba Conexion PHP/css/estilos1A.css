@@ -1,0 +1,48 @@
+*{
+		border:0;
+		margin: 0;
+		padding: 0;
+  	}
+article, figcaption, figure, footer, header, hgroup, nav, section{
+		display:block;
+	}	
+@font-face {
+		font-family: "Chalet";
+		src: url("../fonts/Chalet.eot");
+		src: url("../fonts/Chalet.eot?#iefix") format("embedded-opentype"), 
+			 url("../fonts/Chalet.woff") format("woff"), 
+			 url("../fonts/Chalet.ttf") format("ttf"), 
+			 url("../fonts/Chalet.svg#Chalet") format("svg");
+		font-weight: normal;
+		font-style: normal;
+		}
+/* 16px = 12pt = 100% = 1em, 16 pixeles es el Tamaño Mínimo con el que se debe trabajar*/
+/* 1em es el ancho de la m */
+body {
+		background: url(../img/fondos21.jpg); /* Color de Fondo e Imágen de Fondo */
+		color:#000; /* Color del Texto */
+		font-family: Verdana, Geneva, sans-serif; /* Los fonts True Type van sin comillas, demás van con comillas" */
+		font-size: 2em; /* Se define el Tamaño Máximo o Tamaño de Fuente Global a partir del cual se definen los tamaños de texto en la Página */
+	}
+h1 {
+	color: #F60;
+	margin: 0.25em auto; /* arriba-abajo, auto izquierda-derecha para centrar el texto */
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); /* Sombra distancia en X respecto al texto, distanciaY, blur, color de la sombra rgba(r,g,b, opacidad) */
+	}
+	
+header, nav, footer  { 
+	border-radius: 0.5em; /* Bordes redondeados de la caja*/
+	margin:  0.5em auto; /* Margen arriba y abajo, auto para centrar */
+	max-width: 90%;
+	text-align: center;	
+	}
+header, footer	{
+	background:#1E6381; /*#B0C4DE;*/ /* Azul*/
+	font-family: "Chalet", Verdana, Geneva, sans-serif; 
+}
+nav {background:#1E6381;}
+}
+/*table, th, td {
+    border: 1px solid black;
+}*/
