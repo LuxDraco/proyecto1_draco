@@ -1,0 +1,21 @@
+<html lang="es">
+        
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>   
+    <script type="text/javascript">
+       var jsonData = $.ajax({
+        url: "Encuesta.php",
+        dataType: "json",
+        async: false
+        }).responseText;
+        document.write(jsonData);
+    </script>
+    <title>OTS</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+</body>
+
+</html>
