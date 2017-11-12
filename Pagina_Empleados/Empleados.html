@@ -84,51 +84,53 @@
                                 <div layout="column" id="marco">
 
                                     <!-- *************INICIO TARJETA**************** -->
-                                <md-card md-theme-watch="" id="area" class="tarjeta">
-                                    <md-card-title>
-                                
-                                        <md-card-title-text class="informacion">
-                                
-                                            <div style="position: relative;">
-                                
-                                                <div style="position:absolute; left:180px;" id="contenedor-info">
-                                
-                                
-                                                    <span class="md-headline">
-                                                        <b style="color: #FCB415">Credencial</b>
-                                                    </span>
-                                                    <span class="md-subhead"></span>
-                                                    <h3>Nombre:</h3>
-                                
-                                                    <p id="name"> </p>
-                                
-                                                    <h3 id="nam">Id Usuario: </h3>
-                                                    <p id="worker"> </p>
-                                
+                                    <md-card md-theme-watch="" id="area" class="tarjeta">
+
+                                        <div layout="row" id="cont-tarjeta">
+                                            <div layout="row" layout-align="center center" class="userAvatar">
+                                                <img class="imgAvatar" src="empleado.png">
+                                            </div>
+
+                                            <div layout="column" id="contenedor-info">
+
+                                                <div class="info" layout="column">
+
+                                                    <div class="panelDemo">
+                                                        <h1>Credencial</h1>
+                                                    </div>
+
+                                                    <div class="panelDemo">
+                                                        <h3>
+                                                            Nombre:
+                                                        </h3>
+
+                                                    </div>
+
+                                                    <div class="panelDemo">
+                                                        <h3>
+                                                            Id Usuario:
+                                                        </h3>
+                                                    </div>
+
+                                                   
+                                                  
+                                                   
+
                                                 </div>
-                                
+
+                                                <div layout="row" layout-align="end start" class="btnEliminar">
+                                                    <md-card-actions>
+                                                        <md-button class="md-raised md-warn" type="button" id="boton">Eliminar</md-button>
+                                                    </md-card-actions>
+                                                </div>
+
+
                                             </div>
-                                
-                                        </md-card-title-text>
-                                
-                                        <md-card-title-media>
-                                
-                                            <div class="md-media-md card-media">
-                                
-                                                <md-card-avatar id="borde-foto">
-                                                    <img class="md-user-avatar" src="empleado.png">
-                                                </md-card-avatar>
-                                
-                                            </div>
-                                        </md-card-title-media>
-                                
-                                    </md-card-title>
-                                
-                                    <md-card-actions layout="column" layout-align="start end" class="contenedor-boton">
-                                        <md-button class="md-raised md-warn" type="button" id="boton">Eliminar Usuario</md-button>
-                                    </md-card-actions>
-                                
-                                </md-card>
+
+
+                                        </div>
+
+                                    </md-card>
                                     <!-- *************FIN TARJETA**************** -->
 
 

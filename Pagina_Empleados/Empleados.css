@@ -167,63 +167,38 @@
 /* seccion de la foto  */
 
 
-.carddemoBasicUsage .card-media {
-  width: 125px;
-  height: 120px;
-  background-color: #1e3d18; 
-  border-radius: 0px;
-  margin-right: 300px;
-  margin-top:-10px;
-  border-radius: 100px;
-  
-}
-
-.md-user-avatar {
-
-  width:auto;
-  height: 160px;
-    background-color: #E5AA17;
-  margin-left:-312px;
-  margin-bottom: px;
-  padding: 0px;
-  border-radius: 0px;
-  margin-top:-16px;
-  
-}
 
 
-.informacion{
-
-  margin-top: -20px;
-
-}
-
-
-.btn-primary{
-    width: 60px;
-    height: 25px;
-    margin-left: 600px;
-    text-align: center;
-}
-
-
-#borde-foto{
+.userAvatar {
 
   
-  vertical-align: center;
-  padding:0px;
+
+width:40%;
 }
 
-#marco{
-  color: white;
-  background-color: #FCB415;
-  width: 100%;
-  padding: 2px;
+.imgAvatar{
+width: 100%;
+height: auto;
 }
+
+#contenedor-info{
+   
+    width:60%;
+}
+
+#cont-tarjeta{
+
+    height:100%;
+
+}
+
+
 
 #area{
   color: rgba(255, 255, 255, 0.8);
-  background-color: #C72035;
+  background-color:#C72035;
+  width:auto;
+  height:100%;
   padding: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -231,31 +206,25 @@
   margin-bottom: 0px;
 }
 
-#boton{
-  margin-top: -20px;
-  color: rgba(255, 255, 255, 0.9);
-  background-color: #448AFF;
-  
+
+
+#todo{
+    height: 200px;
+
 }
 
-
-
-
-
-.contenedor-tarjetas
-{
-  border-color: red;
-  background-color: gray;
+.info{
+    height: 70%;
+    font-family: 'Roboto', sans-serif;
+    color:#FCB415;
 }
 
-.md-card{
-  margin: 0px;
+.btnEliminar{
+    height:30%;
 }
 
-.md-card-actions
-{
-  width: 100%;
-  
+.panelDemo{
+    margin-left:5%;
 }
 
 /*********************/
