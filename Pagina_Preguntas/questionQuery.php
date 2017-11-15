@@ -8,10 +8,10 @@
     while($fila = sqlsrv_fetch_array($resultado))
 	{
         $questionEn = utf8_encode($fila['Pregunta']);
-        $id=$fila['ID_pregunta'];
-        $tip=$fila['Nombrep'];
-        $dep=$fila['Nombred'];
-        $preg=$questionEn;
+        $id= $fila['ID_pregunta'];
+        $tip=trim($fila['Nombrep']);
+        $dep=trim($fila['Nombred']);
+        $preg=trim($questionEn);
         $prueba[] = array("ID"=> $id, "tipo"=> $tip, "departamento"=> $dep, "pregunta"=> $preg); 
    }
     sqlsrv_close($conn);

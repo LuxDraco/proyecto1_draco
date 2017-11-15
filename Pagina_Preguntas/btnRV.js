@@ -50,7 +50,7 @@ angular
 
                 this.items = [];
                 for (var i = 0; i < pJ.length; ++i) {
-                    this.items.push(pJ[i].);
+                    this.items.push(pJ[i].pregunta);
                 }
                 /*
                 this.cambiar = function (texto) {
