@@ -12,9 +12,8 @@
         $tip=$fila['Nombrep'];
         $dep=$fila['Nombred'];
         $preg=$questionEn;
-        $prueba[] = array('ID'=> $id, 'tipo'=> $tip, 'departamento'=> $dep, 'pregunta'=> $preg); 
+        $prueba[] = array("ID"=> $id, "tipo"=> $tip, "departamento"=> $dep, "pregunta"=> $preg); 
    }
     sqlsrv_close($conn);
     $json_string = json_encode($prueba, JSON_UNESCAPED_UNICODE);
     echo $json_string;
-    ?>  

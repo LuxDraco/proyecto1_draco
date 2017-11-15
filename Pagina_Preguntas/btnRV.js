@@ -1,3 +1,20 @@
+//Obtener datos de DB y convertir a JSon Object
+var jsonData = $.ajax({
+    url: "questionQuery.php",
+    dataType: "json",
+    async: false
+}).responseText;
+
+var pJ = JSON.parse(jsonData);
+$(jQuery.parseJSON(JSON.stringify(pJ))).each(function() {  
+    var ID = this.ID;
+    var Tipo = this.tipo;
+    var Departamento = this.departamento;
+    var Pregunta = this.pregunta;
+    console.log(Departamento.length);
+    console.log(ID + Tipo + Departamento + Pregunta);
+});
+
 angular
     .module('MyApp', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'ngSanitize', 'ngRoute'])
     //.controller('AppCtrl', function () { })
@@ -22,22 +39,7 @@ angular
             });
     });
 
-//Obtener datos de DB y convertir a JSon Object
-var jsonData = $.ajax({
-    url: "questionQuery.php",
-    dataType: "json",
-    async: false
-}).responseText;
-//document.write(jsonData);
 
-var qtns = new Array();
-var qType = new Array();
-var qDept = new Array();
-
-for (var a = 0; a < jsonData.length; a++) {
-    qtns[a] = jsonData[a].pregunta;
-    qType[a] = jsonData[a].tipo;
-    qDept[a] = jsonData[a].departamento;
 
     (function () {
         'use strict';
@@ -47,8 +49,8 @@ for (var a = 0; a < jsonData.length; a++) {
             .controller('AppCtrl1', function () {
 
                 this.items = [];
-                for (var i = 0; i < qtns.length; ++i) {
-                    this.items.push(qtns[i]);
+                for (var i = 0; i < pJ.length; ++i) {
+                    this.items.push(pJ[i].);
                 }
                 /*
                 this.cambiar = function (texto) {
