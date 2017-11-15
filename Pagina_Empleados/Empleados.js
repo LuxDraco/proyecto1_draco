@@ -9,10 +9,10 @@ angular
 
         $routeProvider
             .when("/", {
-                templateUrl: "component_info.html"
+                templateUrl: "info_card/component_info.html"
             })
             .when("/main", {
-                templateUrl: "component_info.html"
+                templateUrl: "info_card/component_info.html"
             })
             .when("/pie", {
                 templateUrl: "GraficaPie.html"
