@@ -173,12 +173,13 @@
 
   
 
-width:40%;
+width:45%;
 }
 
 .imgAvatar{
 width: 100%;
-height: auto;
+height: 100%;
+background-color: #E5AA17;
 }
 
 #contenedor-info{
@@ -224,6 +225,8 @@ height: auto;
 }
 
 .panelDemo{
+    margin-top:5%;
+    color:white;
     margin-left:5%;
 }
 
