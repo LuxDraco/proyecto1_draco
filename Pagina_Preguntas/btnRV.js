@@ -5,15 +5,8 @@ var jsonData = $.ajax({
     async: false
 }).responseText;
 
+//Convertir JSON a Array de JSONs
 var pJ = JSON.parse(jsonData);
-$(jQuery.parseJSON(JSON.stringify(pJ))).each(function() {  
-    var ID = this.ID;
-    var Tipo = this.tipo;
-    var Departamento = this.departamento;
-    var Pregunta = this.pregunta;
-    console.log(Departamento.length);
-    console.log(ID + Tipo + Departamento + Pregunta);
-});
 
 angular
     .module('MyApp', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'ngSanitize', 'ngRoute'])
@@ -40,7 +33,8 @@ angular
     });
 
 
-
+    //Funcion que al iniciar el controlador
+    //llena los botones con el texto de las preguntas
     (function () {
         'use strict';
 
@@ -52,7 +46,9 @@ angular
                 for (var i = 0; i < pJ.length; ++i) {
                     this.items.push(pJ[i].pregunta);
                 }
-                /*
+                /* Se comenta esta sección, no es necesario para
+                    agregar preguntas en click, se guarda el código
+                    para posibles usos
                 this.cambiar = function (texto) {
                     this.items.push(texto);
                     this.showme = false;
