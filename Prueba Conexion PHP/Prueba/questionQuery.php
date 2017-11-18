@@ -16,6 +16,5 @@
    }
     sqlsrv_close($conn);
     $json_string = json_encode($prueba, JSON_UNESCAPED_UNICODE);
-    file_put_contents('myfile.json', $json_string);
     echo $json_string;
     ?>  

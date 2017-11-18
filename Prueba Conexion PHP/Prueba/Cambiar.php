@@ -40,9 +40,9 @@
     </section> 
     </section> 
     <form action="Hecho.php" method="post">
-No de pregunta <input type="int" name="preg"><br>
 Nueva pregunta <input type="text" name="nupreg"><br>
 Tipo de la nueva pregunta <input type="int" name="tipreg"><br>
+Depto de la nueva pregunta <input type="int" name="depto"><br>
 <input type="submit">
 </form>
   

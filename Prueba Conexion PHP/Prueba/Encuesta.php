@@ -8,7 +8,7 @@
 	<header>
         <meta http-equiv="Content-Type" content="text/html; charset=etf-8"/>
         <h1>Encuesta</h1>
-        <h2>¿porqué me odiü la vida?</h2>
+        <h2>¿porqué me odia la vida?</h2>
         <link rel= "stylesheet" href="css/estilos3C.css">  	
 	</header>
 <nav>
@@ -24,10 +24,10 @@
 				<th scope="col">Pregunta&nbsp;</th>
 			</tr>
     <?php
-    //$checar = $_POST["depto"];
+    $checar = $_POST["depto"];
 	$resultado = sqlsrv_query($conn,"SELECT Cuestionario.ID_pregunta, TipoP.Nombrep, Departamento.Nombred, Cuestionario.Pregunta
     FROM Cuestionario INNER JOIN TipoP ON Cuestionario.ID_tipo = TipoP.ID_tipo INNER JOIN Departamento ON Cuestionario.ID_departamento = Departamento.ID_departamento
-    Where Departamento.ID_departamento = 2"); 
+    Where Departamento.ID_departamento = $checar"); 
     $prueba = array();
     while($fila = sqlsrv_fetch_array($resultado))
 	{
