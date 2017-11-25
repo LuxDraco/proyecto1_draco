@@ -22,6 +22,12 @@ angular
             });
     });
 
+
+
+var nombres = ["luis", "jose", "pedro", "juan", "chucho"];
+
+var ids = [123, 342, 124, 678, 459];
+
 (function () {
     'use strict';
 
@@ -29,16 +35,26 @@ angular
         .module('MyApp')
         .controller('AppCtrl1', function () {
 
-            this.items = [];
-            for (var i = 0; i < 10; ++i) {
-                this.items.push("Hola " + i);
-            }
+            this.items = new Array();
+          
 
-            this.cambiar = function (texto) {
-                this.items.push(texto);
+            for (var i = 0; i < ids.length; ++i) {
+                var empl = {
+                    "id": ids[i],
+                    "name": nombres[i]
+                };
+                this.items.push(empl);
+            }
+           
+            /*for (var i = 0; i < id.length; ++i) {
+                this.items.push(id[i]);
+            }*/
+            
+            this.cambiar = function () {
                 this.showme = true;
             }
 
         });
 
 })();
+
